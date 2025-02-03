@@ -1,0 +1,34 @@
+{
+  "plants": [
+    {
+      "id": "1",
+      "name": "Bamboo",
+      "image": "./assets/plants/plantbamboo.jpg",
+      "water": "No"
+    },
+    {
+      "id": "2",
+      "name": "Orchid",
+      "image": "./assets/plants/PlantOrchids.jpg",
+      "water": "No"
+    },
+    {
+      "id": "3",
+      "name": "Rose",
+      "image": "./assets/plants/Plantroses.jpg",
+      "water": "No"
+    },
+    {
+      "id": "4",
+      "name": "Sunflower",
+      "image": "./assets/plants/PlantSunflower.jpg",
+      "water": "No"
+    },
+    {
+      "id": "5",
+      "name": "Tulip",
+      "image": "./assets/plants/PlantTulips.jpg",
+      "water": "No"
+    }
+  ]
+}
