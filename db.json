@@ -4,13 +4,13 @@
       "id": "1",
       "name": "Bamboo",
       "image": "./assets/plants/plantbamboo.jpg",
-      "water": "No"
+      "water": "Yes"
     },
     {
       "id": "2",
       "name": "Orchid",
       "image": "./assets/plants/PlantOrchids.jpg",
-      "water": "No"
+      "water": "Yes"
     },
     {
       "id": "3",

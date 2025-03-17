@@ -14,11 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   
-  function renderPlants(plants) {
+  function renderPlants(plant) {
     const main = document.querySelector("#garden");
     main.innerHTML = "";
 
-    plants.forEach((plant) => {
       const thePlant = document.createElement("div");
       thePlant.className = "card";
       thePlant.id = `plant-${plant.id}`;
@@ -60,8 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
       deleteButton.addEventListener("click", () => {
         deletePlant(plant.id);
       });
-    });
   }
+  
 
   function updateWater(plantId, newWater) {
     fetch(`http://localhost:3000/plants/${plantId}`, {
@@ -118,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(response => response.json())
     .then(newPlant => {
-      fetchPlants(); 
+      renderPlant(newPlant); 
     })
     .catch(error => {
       console.error('Error adding Plant:', error);
