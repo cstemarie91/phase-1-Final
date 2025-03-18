@@ -14,11 +14,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   
-  function renderPlants(plant) {
+  function renderPlants(plants) {
     const main = document.querySelector("#garden");
     main.innerHTML = "";
-
-      const thePlant = document.createElement("div");
+     plants.forEach(renderPlant)
+     console.log("Plants are Rendered!")
+  }
+  
+  function renderPlant(plant) {
+    const main = document.querySelector("#garden")
+     const thePlant = document.createElement("div");
       thePlant.className = "card";
       thePlant.id = `plant-${plant.id}`;
 
@@ -59,8 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
       deleteButton.addEventListener("click", () => {
         deletePlant(plant.id);
       });
+      
   }
-  
 
   function updateWater(plantId, newWater) {
     fetch(`http://localhost:3000/plants/${plantId}`, {
