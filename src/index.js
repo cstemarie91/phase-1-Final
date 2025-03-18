@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   function renderPlant(plant) {
     const main = document.querySelector("#garden")
+
      const thePlant = document.createElement("div");
       thePlant.className = "card";
       thePlant.id = `plant-${plant.id}`;
@@ -127,6 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(error => {
       console.error('Error adding Plant:', error);
     });
+    form.reset();
   }
 
   function fetchPlants() {
